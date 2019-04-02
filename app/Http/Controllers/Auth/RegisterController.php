@@ -28,6 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
+    //this helps us after logged in toredirect to the home page
     protected $redirectTo = '/home';
 
     /**
@@ -35,6 +36,7 @@ class RegisterController extends Controller
      *
      * @return void
      */
+    //this helps us after logged in not goto register
     public function __construct()
     {
         $this->middleware('guest');
@@ -46,8 +48,10 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+    //in this validation form of the text fields data are takeplace
     protected function validator(array $data)
     {
+        //name,email,password are textfield names respectively
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
@@ -61,6 +65,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
+    //in this values from text fields are held in a variables and registration takeplace
     protected function create(array $data)
     {
         return User::create([

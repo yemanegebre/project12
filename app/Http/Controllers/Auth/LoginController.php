@@ -25,8 +25,18 @@ class LoginController extends Controller
      *
      * @var string
      */
+    //after login page it redirects to the  home page
+    /*
+    public function authenticate() {
+      if (Auth::attempt(['email' => $email, 'password' => $password])) {
+      
+         // Authentication passed...
+         return redirect()->intended('/home');
+      }
+   }
+   */
     protected $redirectTo = '/home';
-
+//redirects login page to home page
     /**
      * Create a new controller instance.
      *

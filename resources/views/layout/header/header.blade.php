@@ -4,26 +4,28 @@
       </div>
 
       <!--logo start-->
-      <a href="index.html" class="logo">Nice <span class="lite">Admin</span></a>
+      <a href="index.html" class="logo"><i><b>STAFF-<span class="lite">-MANAGEMENT SYSTEM</span></a>
       <!--logo end-->
 
       <div class="nav search-row" id="top_menu">
         <!--  search form start -->
         <ul class="nav top-menu">
           <li>
+          <!--
             <form class="navbar-form">
               <input class="form-control" placeholder="Search" type="text">
             </form>
+            -->
           </li>
         </ul>
         <!--  search form end -->
       </div>
-
       <div class="top-nav notification-row">
         <!-- notificatoin dropdown start-->
         <ul class="nav pull-right top-menu">
 
           <!-- task notificatoin start -->
+          <!--
           <li id="task_notificatoin_bar" class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <i class="icon-task-l"></i>
@@ -107,17 +109,18 @@
               </li>
             </ul>
           </li>
+          -->
           <!-- task notificatoin end -->
           <!-- inbox notificatoin start-->
           <li id="mail_notificatoin_bar" class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <i class="icon-envelope-l"></i>
-                            <span class="badge bg-important">5</span>
+                            <span class="badge bg-important"></span>
                         </a>
             <ul class="dropdown-menu extended inbox">
               <div class="notify-arrow notify-arrow-blue"></div>
               <li>
-                <p class="blue">You have 5 new messages</p>
+                <p class="blue">You have  new messages</p>
               </li>
               <li>
                 <a href="#">
@@ -178,7 +181,7 @@
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
 
                             <i class="icon-bell-l"></i>
-                            <span class="badge bg-important">7</span>
+                            <span class="badge bg-important"></span>
                         </a>
             <ul class="dropdown-menu extended notification">
               <div class="notify-arrow notify-arrow-blue"></div>
@@ -225,7 +228,7 @@
                             <span class="profile-ava">
                                 <img alt="" src="img/avatar1_small.jpg">
                             </span>
-                            <span class="username">Jenifer Smith</span>
+                            <span class="username">Admin</span>
                             <b class="caret"></b>
                         </a>
             <ul class="dropdown-menu extended logout">
@@ -233,6 +236,7 @@
               <li class="eborder-top">
                 <a href="#"><i class="icon_profile"></i> My Profile</a>
               </li>
+              <!--
               <li>
                 <a href="#"><i class="icon_mail_alt"></i> My Inbox</a>
               </li>
@@ -242,15 +246,20 @@
               <li>
                 <a href="#"><i class="icon_chat_alt"></i> Chats</a>
               </li>
+              -->
               <li>
-                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+              <!--forget() is used to -->
+                <a href="{{URL::to('/login2')}}"><i class="icon_key_alt"></i>Log Out</a>
               </li>
+              <!--
               <li>
                 <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
               </li>
+
               <li>
                 <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
               </li>
+              -->
             </ul>
           </li>
           <!-- user login dropdown end -->
